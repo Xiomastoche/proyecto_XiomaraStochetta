@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(238, 192, 155);
+}
+
+.btn_link {
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    font-size: 18px;
+    padding: 8px;
+}
+
+.btn_link:hover {
+    color: rgb(253, 251, 251);
+}
+
+.first_section {
+    background-image: url(./img/fondo.png);
+    height: 550px;
+    padding: 13rem 0 0 0;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.card-img-top {
+    width: 100px;
+}
+
+.card {
+    padding: 8px;
+}
+
+.card-text {
+    color: rgb(121, 3, 21);
+    font-size: 18px;
+}
+
+footer {
+    background-color:rgb(238, 192, 155);
+    margin-top: 0px;
+}
+
