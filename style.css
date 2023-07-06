@@ -20,14 +20,19 @@ header {
 }
 
 .first_section {
-    background-image: url(./img/fondo.png);
-    height: 520px;
-    padding: 13rem 0 0 0;
-    width: 100%;
+    background-image: url(./img/img-index.jpeg);
+    padding: 14rem 0 0 0;
     background-repeat: no-repeat;
+    background-size: cover;
 }
 
-h1 {
+.third_section {
+    background-image: url(./img/cont.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
     font-family: 'Ubuntu', sans-serif;
 }
 
@@ -46,6 +51,6 @@ h1 {
 
 footer {
     background-color:rgb(238, 192, 155);
-    margin-top: 0px;
+
 }
 

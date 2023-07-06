@@ -1,0 +1,27 @@
+[
+    { 
+        "id": 1, 
+        "nombre": "Portillo Malbec",
+        "imagen": "./img/malbec.jpeg", 
+        "precio": 1000
+    },
+    { 
+        "id": 2, 
+        "nombre": "Portillo Dulce Natural", 
+        "imagen": "./img/dulce.jpeg", 
+        "precio": 1200
+    },
+    { 
+        "id": 3, 
+        "nombre": "Portillo Cabernet", 
+        "imagen": "./img/cabernet.jpeg", 
+        "precio": 1400
+    },
+    { 
+        "id": 4, 
+        "nombre": "Portillo Rosado", 
+        "imagen": "./img/rose.jpeg", 
+        "precio": 1480
+    }
+]
+  
