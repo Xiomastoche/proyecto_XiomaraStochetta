@@ -45,27 +45,29 @@
     </header>
     <!-- MAIN -->
     <main>
-        <div class="container mt-5 mb-4">
+        <div class="container mt-5 mb-5">
             <div class="row text-center">
               <!-- Productos -->
               <div class="col">
-                <h2 class="title pb-4">PRODUCTOS</h2>
+                <h2 class="title pb-5 mt-2">PRODUCTOS</h2>
                 <div class="row row-cols-1 row-cols-md-3 g-4" id="lista-productos">
                 </div>
               </div>
+              
             </div>
+            <div class="container border border-dark border-opacity-50 rounded-1 mt-4">
             <!-- Carrito -->
-            <div class="row pt-4 pb-3">
+            <div class="row p-4">
               <div class="col">
-                <hr class="border border-2 opacity-50">
                 <h2 class="title pt-3 fs-4"> <i class="fa-solid fa-cart-shopping"></i> MI CARRITO </h2>
-
                 <ul id="lista-carrito" class="list-group m-3"></ul>
                 <p class="text fs-5">Total: $<span id="total-carrito"> 0</span></p>
               </div>
+              <hr class="border border-danger border-2 opacity-25 mt-3">
             </div>
-            <div class="row pb-5">
-              <h2 class="title fs-5 pb-3"> DATOS DE CONTACTO</h2>
+            <div class="row p-4">
+              <h2 class="title fs-5"> DATOS DE CONTACTO</h2>
+              <p class="text pb-3"> Rellene los datos solicitados a continuación para efectivizar la compra con éxito.</p>
               <form id="formComprar"></form>
               <div class="col-md-6">
                 <div class="form-group">
@@ -79,11 +81,12 @@
                   <input type="email" class="form-control" id="inputEmail" placeholder="Ingresa tu correo electrónico">
                 </div>
               </div>
-              <div class="d-grid gap-2 col-3 d-md-block pt-5">
+              <div class="d-grid gap-2 col-3 d-md-block pt-5 pb-3">
                 <button id="btn-comprar" class="btn btn-outline-success rounded-0">Comprar</button>
                 <button id="btn-vaciar" class="btn btn-outline-dark rounded-0">Vaciar carrito</button>
               </div>
               </form>
+            </div>
             </div>
             
             

@@ -39,15 +39,15 @@ const mostrarProductos = async () => {
     const response = await fetch('./productos.json');
     const data = await response.json();
 
-    // Creamos el HTML para cada producto y lo agregamos a la lista de productos
+    // Creo el HTML para cada producto y lo agrego a la lista de productos
     let html = '';
     data.forEach(producto => {
       html += `
         <div class="col-md-3">
-          <div class="card border-dark" style="max-width: 18rem;">
+          <div class="card border-dark border-opacity-50" style="max-width: 18rem;">
             <img src="${producto.imagen}" class="card-img-top" alt="${producto.nombre}">
             <div class="card-body">
-              <h5 class="card-title">${producto.nombre}</h5>
+              <h2 class="card-title fs-5">${producto.nombre}</h2>
               <p class="card-text">$${producto.precio}</p>
               <button class="btn btn-outline-dark rounded-0 btn-agregar" data-id="${producto.id}">Agregar al carrito</button>
             </div>
