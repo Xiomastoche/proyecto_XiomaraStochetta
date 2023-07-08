@@ -7,6 +7,7 @@ const listaCarrito = document.getElementById('lista-carrito');
 const totalCarrito = document.getElementById('total-carrito');
 const btnVaciar = document.getElementById('btn-vaciar');
 const btnComprar = document.getElementById('btn-comprar');
+const mensaje = document.getElementById('mensaje');
 const formComprar = document.getElementById('formComprar');
 
 // Utilizo SweetAlert2 para mostrar un mensaje de confirmación al vaciar el carrito
@@ -27,6 +28,7 @@ btnVaciar.addEventListener('click', () => {
         'El carrito se borró correctamente',
         'success'
       );
+      mensaje.style.display = 'block';
     }
   });
 });
@@ -56,6 +58,7 @@ const mostrarProductos = async () => {
       `;
     });
     listaProductos.innerHTML = html;
+    
 
     // Agrego un evento a cada botón de agregar para que se ejecute al hacer clic
     const btnAgregar = document.querySelectorAll('.btn-agregar');
@@ -82,6 +85,7 @@ const mostrarProductos = async () => {
         }
 
         mostrarCarrito();
+        mensaje.style.display = 'none';
       });
     });
   } catch (error) {
@@ -99,6 +103,11 @@ const mostrarProductos = async () => {
 const mostrarCarrito = () => {
   // Creo el HTML para cada producto del carrito y lo agrego a la lista del carrito
   let html = '';
+  if (carrito.length === 0) { // si el carrito esta vacio, muestro el mensaje de carrito vacio
+    mensaje.style.display = 'block';
+  } else {
+    mensaje.style.display = 'none';
+  }
   carrito.forEach(producto => {
     html += `
       <li class="list-group-item">
