@@ -11,7 +11,8 @@ const mensaje = document.getElementById('mensaje');
 const formComprar = document.getElementById('formComprar');
 
 // Utilizo SweetAlert2 para mostrar un mensaje de confirmación al vaciar el carrito
-btnVaciar.addEventListener('click', () => {
+btnVaciar.addEventListener('click', (event) => {
+  event.preventDefault();
   Swal.fire({
     title: 'Estás seguro que deseas vaciar el carrito?',
     icon: 'warning',
