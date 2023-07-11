@@ -142,7 +142,8 @@ const mostrarCarrito = () => {
 };
 
 // Agrego un evento al botón de comprar para que se ejecute al hacer clic
-btnComprar.addEventListener('click', () => {
+btnComprar.addEventListener('click', (event) => {
+  event.preventDefault();
   // Obtengo los valores de los input del cliente
   const inputNombre = document.getElementById('inputNombre').value;
   const inputEmail = document.getElementById('inputEmail').value;
